@@ -34,30 +34,35 @@ import java.util.Arrays;
  * ViewDragHelper is a utility class for writing custom ViewGroups. It offers a
  * number of useful operations and state tracking for allowing a user to drag
  * and reposition views within their parent ViewGroup.
+ * ViewDragHelper是一个用于编写自定义ViewGroup的工具类。 它提供了许多有用的操作和状态跟踪，以允许用户在其父ViewGroup中拖动和重新定位视图。
  */
 public class ViewDragHelper {
     private static final String TAG = "ViewDragHelper";
 
     /**
      * A null/invalid pointer ID.
+     * 无效/无效的指针ID
      */
     public static final int INVALID_POINTER = -1;
 
     /**
      * A view is not currently being dragged or animating as a result of a
      * fling/snap.
+     * 一个视图当前没有被拖动或者由于一次性拍摄而产生动画效果。
      */
     public static final int STATE_IDLE = 0;
 
     /**
      * A view is currently being dragged. The position is currently changing as
      * a result of user input or simulated user input.
+     * 目前正在拖动视图。 由于用户输入或模拟用户输入，该位置当前正在改变。
      */
     public static final int STATE_DRAGGING = 1;
 
     /**
      * A view is currently settling into place as a result of a fling or
      * predefined non-interactive motion.
+     * 由于一次性或预定义的非交互式动作，视图正在解决。
      */
     public static final int STATE_SETTLING = 2;
 

@@ -23,6 +23,7 @@ import java.util.List;
 public class SwipeBackLayout extends FrameLayout {
     /**
      * Minimum velocity that will be detected as a fling
+     * 最小速度
      */
     private static final int MIN_FLING_VELOCITY = 400; // dips per second
 
@@ -53,23 +54,27 @@ public class SwipeBackLayout extends FrameLayout {
     /**
      * A view is not currently being dragged or animating as a result of a
      * fling/snap.
+     * 一个视图当前没有被拖动或者由于一次性拍摄而产生动画效果
      */
     public static final int STATE_IDLE = ViewDragHelper.STATE_IDLE;
 
     /**
      * A view is currently being dragged. The position is currently changing as
      * a result of user input or simulated user input.
+     * 目前正在拖动视图。 由于用户输入或模拟用户输入，该位置当前正在改变
      */
     public static final int STATE_DRAGGING = ViewDragHelper.STATE_DRAGGING;
 
     /**
      * A view is currently settling into place as a result of a fling or
      * predefined non-interactive motion.
+     * 由于一次性或预定义的非交互式动作，视图正在解决。
      */
     public static final int STATE_SETTLING = ViewDragHelper.STATE_SETTLING;
 
     /**
      * Default threshold of scroll
+     * 滚动的默认值
      */
     private static final float DEFAULT_SCROLL_THRESHOLD = 0.3f;
 
@@ -84,6 +89,7 @@ public class SwipeBackLayout extends FrameLayout {
     /**
      * Threshold of scroll, we will close the activity, when scrollPercent over
      * this value;
+     * 当scrollPercent超过此值时，我们将关闭活动的阈值;
      */
     private float mScrollThreshold = DEFAULT_SCROLL_THRESHOLD;
 

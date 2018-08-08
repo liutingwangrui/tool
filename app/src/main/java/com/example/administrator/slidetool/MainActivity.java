@@ -14,11 +14,14 @@ public class MainActivity extends SwipeBackActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView textView= (TextView) findViewById(R.id.textview);
+        TextView listText= (TextView) findViewById(R.id.listText);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,SecondActivity.class));
             }
         });
+
+
     }
 }
